@@ -9,10 +9,30 @@
     <title>Drawing Pad</title>
 </head>
 
-<body>
+<div id="container">
+    <div id="header">
+        <div id="headerTitle">My Drawing Pad</div>
+        <div id="headerSubTitle">let your creativity out</div>
+    </div>
 
-</body>
+    <div id="mainBox">
+        <div id="controls">
+            <button id="blackBtn">Black</button>
+            <button id="randomBtn">Random</button>
+            <button id="eraserBtn">Eraser</button>
+            <button id="resetBtn">Reset</button>
+            <div id="boardSize">
+                <input type='range' min='2' max='100' value="16" id="sizeSlider" />
+                <button id="setSize">Set Size</button>
+            </div>
+        </div>
+        <div id="sketchpad"></div>
+    </div>
 
+    <div id="footer">
+        <div id="footerText">Created by Jacob</div>
+    </div>
+</div>
 
 <script src="./main.js"></script>
 

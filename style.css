@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 2fr 14fr 1fr;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    background-color: darkred;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#headerTitle {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#headerSubTitle {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#mainBox {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    background-color: lightblue;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: blueviolet;
+}
+
+#controls>button {
+    text-decoration: none;
+    border: solid;
+    border-radius: 10px;
+    padding:0.25rem
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    background-color: lightcoral;
+}
