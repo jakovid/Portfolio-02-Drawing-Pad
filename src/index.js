@@ -1,4 +1,5 @@
 import { makeDrawingPad } from "./modules/makeDrawingPad";
+import { resetDrawingPad } from "./modules/resetDrawingPad";
 
 (function(){
     var drawingPadMain = {
@@ -16,6 +17,7 @@ import { makeDrawingPad } from "./modules/makeDrawingPad";
             let setSizeBtn = document.getElementById('setSizeBtn');
         },
         bindEvents: function() {
+            resetBtn.addEventListener('click', resetDrawingPad);
             setSizeBtn.addEventListener('click', e => {
                 makeDrawingPad(sizeSlider.value);
             })
