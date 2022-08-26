@@ -40,7 +40,7 @@
     text-align: center;
     padding: 2rem;
     gap: 1rem;
-    background-color: blueviolet;
+    background-color: lightcoral;
 }
 
 #controls>button {
@@ -48,6 +48,16 @@
     border: solid;
     border-radius: 10px;
     padding:0.25rem
+}
+
+#instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: lightcoral;
+    padding: 2rem;
 }
 
 #footer {
