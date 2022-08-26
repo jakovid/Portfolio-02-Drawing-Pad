@@ -1,6 +1,7 @@
 import { makeDrawingPad } from "./modules/makeDrawingPad";
 import { resetDrawingPad } from "./modules/resetDrawingPad";
 import { domStatusUpdate } from "./modules/domStatusUpdate";
+import { changeColor } from "./modules/changeColor";
 
 (function(){
     var drawingPadMain = {
@@ -19,6 +20,18 @@ import { domStatusUpdate } from "./modules/domStatusUpdate";
             let setSizeBtn = document.getElementById('setSizeBtn');
         },
         bindEvents: function() {
+            blackBtn.addEventListener('click', e => {
+                changeColor('black');
+                domStatusUpdate();
+            });
+            randomBtn.addEventListener('click', e => {
+                changeColor('random');
+                domStatusUpdate();
+            })
+            eraserBtn.addEventListener('click', e => {
+                changeColor('eraser');
+                domStatusUpdate();
+            })
             resetBtn.addEventListener('click', resetDrawingPad);
             setSizeBtn.addEventListener('click', e => {
                 makeDrawingPad(sizeSlider.value);
