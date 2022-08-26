@@ -1,5 +1,6 @@
 import { makeDrawingPad } from "./modules/makeDrawingPad";
 import { resetDrawingPad } from "./modules/resetDrawingPad";
+import { status } from "./modules/drawingStatus";
 
 (function(){
     var drawingPadMain = {

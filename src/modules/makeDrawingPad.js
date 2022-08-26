@@ -1,3 +1,5 @@
+import { status } from "./drawingStatus";
+
 function makeDrawingPad(size) {
     //clear the pad
     let boxes = document.querySelectorAll('.box');
@@ -14,6 +16,7 @@ function makeDrawingPad(size) {
         // box.addEventListener("mouseover", colorBox)
         drawingPad.append(box);
     }
+    status.currentSize = size;
 }
 
 export { makeDrawingPad };
