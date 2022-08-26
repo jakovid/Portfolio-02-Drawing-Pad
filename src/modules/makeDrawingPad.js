@@ -10,7 +10,6 @@ function makeDrawingPad(size) {
     for (let i = 0; i < size*size; i++) {
         let box = document.createElement("div");
         box.className = 'box';
-        box.innerHTML = '.';
         // box.addEventListener("mousedown", colorBox);
         // box.addEventListener("click", colorBox)
         // box.addEventListener("mouseover", colorBox)

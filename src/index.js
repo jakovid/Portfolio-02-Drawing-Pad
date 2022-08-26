@@ -1,6 +1,6 @@
 import { makeDrawingPad } from "./modules/makeDrawingPad";
 import { resetDrawingPad } from "./modules/resetDrawingPad";
-import { status } from "./modules/drawingStatus";
+import { domStatusUpdate } from "./modules/domStatusUpdate";
 
 (function(){
     var drawingPadMain = {
@@ -8,6 +8,7 @@ import { status } from "./modules/drawingStatus";
             this.cacheBtns();
             this.bindEvents();
             makeDrawingPad(4);
+            domStatusUpdate();
         },
         cacheBtns: function() {
             let blackBtn = document.getElementById('blackBtn');
@@ -21,6 +22,7 @@ import { status } from "./modules/drawingStatus";
             resetBtn.addEventListener('click', resetDrawingPad);
             setSizeBtn.addEventListener('click', e => {
                 makeDrawingPad(sizeSlider.value);
+                domStatusUpdate();
             })
             console.log(setSizeBtn);
         }
