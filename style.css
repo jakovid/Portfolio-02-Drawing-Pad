@@ -50,6 +50,13 @@
     padding:0.25rem
 }
 
+#drawingPad {
+    display: grid;
+    background-color: white;
+    border: solid 5px;
+    margin: 2rem;
+}
+
 #instructions {
     display: flex;
     flex-direction: column;

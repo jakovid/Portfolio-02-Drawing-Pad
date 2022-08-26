@@ -23,10 +23,11 @@
             <button id="resetBtn">Reset</button>
             <div id="boardSize">
                 <input type='range' min='2' max='100' value="16" id="sizeSlider" />
-                <button id="setSize">Set Size</button>
+                <button id="setSizeBtn">Set Size</button>
             </div>
         </div>
-        <div id="sketchpad"></div>
+        <div id="drawingPad">
+        </div>
         <div id="instructions">
             <div id="instructionsTitle">Instructions:</div>
             <div id="instructionsText">Select your color. Board size.</div>
@@ -38,6 +39,6 @@
     </div>
 </div>
 
-<script src="./main.js"></script>
+<script src="./main.js" type="module"></script>
 
 </html>
