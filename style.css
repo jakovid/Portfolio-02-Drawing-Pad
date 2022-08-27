@@ -29,6 +29,7 @@
 
 #mainBox {
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 5fr 1fr;
     background-color: lightblue;
 }
@@ -53,6 +54,8 @@
 #drawingPad {
     display: grid;
     background-color: white;
+    height: 600px;
+    width: 600px;
     border: solid 5px;
     margin: 2rem;
 }
