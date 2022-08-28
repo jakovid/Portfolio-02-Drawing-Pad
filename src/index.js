@@ -8,7 +8,7 @@ import { changeColor } from "./modules/changeColor";
         init: function() {
             this.cacheBtns();
             this.bindEvents();
-            makeDrawingPad(4);
+            makeDrawingPad(20);
             domStatusUpdate();
         },
         cacheBtns: function() {
@@ -29,7 +29,7 @@ import { changeColor } from "./modules/changeColor";
                 domStatusUpdate();
             })
             eraserBtn.addEventListener('click', e => {
-                changeColor('eraser');
+                changeColor('white');
                 domStatusUpdate();
             })
             resetBtn.addEventListener('click', resetDrawingPad);

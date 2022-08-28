@@ -75,10 +75,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
     color: white;
     background-color: lightcoral;
     padding: 2rem;
+}
+
+#instructionsTitle {
+    font-weight: bolder;
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
 }
 
 #footer {
