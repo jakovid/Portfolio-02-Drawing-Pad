@@ -44,6 +44,17 @@
     background-color: lightcoral;
 }
 
+#infoBox {
+    background-color: white;
+    border: solid black;
+    border-radius: 10px;
+    padding: 0.25rem;
+}
+
+.infoTitle {
+    font-weight: bolder;
+}
+
 #controls>button {
     text-decoration: none;
     border: solid;

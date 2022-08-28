@@ -1,4 +1,5 @@
 import { status } from "./drawingStatus";
+import { draw } from "./draw";
 
 function makeDrawingPad(size) {
     //clear the pad
@@ -10,9 +11,8 @@ function makeDrawingPad(size) {
     for (let i = 0; i < size*size; i++) {
         let box = document.createElement("div");
         box.className = 'box';
-        // box.addEventListener("mousedown", colorBox);
-        // box.addEventListener("click", colorBox)
-        // box.addEventListener("mouseover", colorBox)
+        box.addEventListener("click", draw);
+        box.addEventListener("mouseover", draw);
         drawingPad.append(box);
     }
     status.currentSize = size;
